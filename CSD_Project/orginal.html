@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Table Filter Example</title>
+	<style>
+		table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+		}
+	</style>
+	<script>
+		function filterTable() {
+			// Get input values
+			var restaurant = document.getElementById("restaurant-search").value.toLowerCase();
+			var address = document.getElementById("address-search").value.toLowerCase();
+			var minRating = parseInt(document.getElementById("rating-min").value);
+			var maxPrice = parseInt(document.getElementById("price-max").value);
+			var onlineBooking = document.getElementById("online-booking-select").value;
+			
+			// Get table rows
+			var tableRows = document.getElementById("myTable").rows;
+
+			// Loop through table rows and hide/show based on input values
+			for (var i = 1; i < tableRows.length; i++) {
+				var row = tableRows[i];
+				var restaurantName = row.cells[0].textContent.toLowerCase();
+				var addressName = row.cells[1].textContent.toLowerCase();
+				var rating = parseInt(row.cells[2].textContent);
+				var price = parseInt(row.cells[3].textContent);
+				var bookingStatus = row.cells[4].textContent.toLowerCase();
+				
+				if (restaurantName.includes(restaurant) && addressName.includes(address) && rating >= minRating && price <= maxPrice && (onlineBooking === "all" || bookingStatus === onlineBooking)) {
+					row.style.display = "";
+				} else {
+					row.style.display = "none";
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+	<h2>Table Filter Example</h2>
+	<label for="restaurant-search">Restaurant:</label>
+	<input type="text" id="restaurant-search">
+	<label for="address-search">Address:</label>
+	<input type="text" id="address-search">
+	<label for="rating-min">Minimum Rating:</label>
+	<input type="number" id="rating-min" min="1" max="5" value="1">
+	<label for="price-max">Maximum Price:</label>
+	<input type="number" id="price-max" min="210" max="1100" value="1100">
+	<label for="online-booking-select">Online Booking:</label>
+	<select id="online-booking-select">
+		<option value="all">All</option>
+		<option value="yes">Yes</option>
+		<option value="no">No</option>
+	</select>
+	<button onclick="filterTable()">Filter</button>
+<br>
+<br>
+	<table id="myTable">
+		<tr>
+			<th>Restaurant</th>
+			<th>Address</th>
+			<th>Rating</th>
+			<th>Price</th>
+            <th>OnlineBooking</th>
+            <th>Phone</th>
+            <th>Famous Dishes</th>
+
+		</tr>
+		<tr>
+<td>arabian knights</td>
+<td>3rd floor, Opp Bata showroom, above Aptronix, Daba Gardens, Allipuram, Visakhapatnam, Andhra Pradesh 530020</td>
+<td align="right">4</td>
+<td>510</td>
+<td>YES</td>
+<td>098569 93993</td>
+<td>Biryani</td>
+</tr>
+<tr>
+<td>santhosh dhaba</td>
+<td>#30-9-1, Sharda Street, Daba Garden Rd, beside Center Point Hotel, Visakhapatnam, Andhra Pradesh 530020</td>
+<td align="right">3.8</td>
+<td>400</td>
+<td>YES</td>
+<td>086396 89258</td>
+<td>Veg Biryani</td>
+</tr>
+<tr>
+<td>Collection O Rr Grand</td>
+<td>LIC Building, Jail Rd, Daba Gardens, Allipuram, Visakhapatnam, Andhra Pradesh 530020</td>
+<td align="right">3.9</td>
+<td>610</td>
+<td>NO</td>
+<td>0124 620 1530</td>
+<td>chicken Kalmi kebab</td>
+</tr>
+<tr>
+<td>Rajdhani hotel</td>
+<td>30-12-19, Ranga St, Daba Gardens, Junction, Visakhapatnam, Andhra Pradesh 530020</td>
+<td align="right">3.7</td>
+<td>260</td>
+<td>NO</td>
+<td>094402 00330</td>
+<td>Non veg platter</td>
+</tr>
+<tr>
+<td>Bombay Restaurant</td>
+<td>31-32-75 Gantasala Marg Ladies Gate, Beside, Jothee Theatre Rd, Daba Gardens, Visakhapatnam, Andhra Pradesh 530020</td>
+<td align="right">3.9</td>
+<td>810</td>
+<td>YES</td>
+<td>089125 62222</td>
+<td>Chicken Biryani</td>
+</tr>
+<tr>
+<td>shree shyam restaurant</td>
+<td>30-11-2, first left lane before hdfc bank, Daba Gardens, 530020, 11-2, Lakshmi St, Visakhapatnam, Andhra Pradesh 530020</td>
+<td align="right">3.7</td>
+<td>210</td>
+<td>YES</td>
+<td>9999999999</td>
+<td>veg pulao</td>
+</tr>
+<tr>
+<td>Horizon Restaurant</td>
+<td>7th floor, Dolphin hotel, 75 Feet Road, Daba Garden Rd, Dolphin Area, Visakhapatnam, Andhra Pradesh 530020</td>
+<td align="right">4.5</td>
+<td>1,100.00</td>
+<td>no</td>
+<td>0891 662 2444</td>
+<td> </td>
+</tr>
+<tr>
+<td>ganapathi restaurant</td>
+<td>31-32-74, Beside Jothee Theatre Ladies Gate, behind Dolphin hotel, Daba Gardens, Visakhapatnam, Andhra Pradesh 530020</td>
+<td align="right">3.9</td>
+<td>410</td>
+<td>YES</td>
+<td>093471 62019</td>
+<td>jain food</td>
+</tr>
+<tr>
+<td>Hotel amaravathi</td>
+<td>�Amaravati Building Cell Point upstairs, 30-15-110, Daba Garden Rd, Lalitha Colony, Daba Gardens, Allipuram, Visakhapatnam, Andhra Pradesh 530020</td>
+<td align="right">3.7</td>
+<td>510</td>
+<td>YES</td>
+<td>0891 666 0124</td>
+<td>chicken fried rice</td>
+</tr>
+<tr>
+<td>spicy paradise</td>
+<td>Yellamathota Road, Jagadamba Theatre, Yellammagudi Backside, Daba Gardens, Jagadamba Junction, Visakhapatnam, Andhra Pradesh 535002</td>
+<td align="right">3.6</td>
+<td>450</td>
+<td>YES</td>
+<td>040 6740 8400</td>
+<td>Chicken Boneless Biryani</td>
+</tr>
+<tr>
+<td>Ashoka Restaruant</td>
+<td>30-13-11, Leelamahal Up Rd, Daba Gardens, Allipuram, Visakhapatnam, Andhra Pradesh 530020</td>
+<td align="right">3.7</td>
+<td>480</td>
+<td>YES</td>
+<td>7947116630</td>
+<td>chicken Kalmi kebab</td>
+</tr>
+<tr>
+<td>Ramayya Veg. Restaurant</td>
+<td>8, Daba Garden Rd, Near Bank Of Baroda, Prakasaraopeta, Daba Gardens, Ram Nagar, Visakhapatnam, Andhra Pradesh 530020</td>
+<td align="right">4</td>
+<td>250</td>
+<td>NO</td>
+<td>093476 93112</td>
+<td>meals</td>
+</tr>
+<tr>
+<td>indian flavours </td>
+<td>Ladies gate, Jothee Theatre Rd, Daba Gardens, Visakhapatnam, Andhra Pradesh 530020</td>
+<td align="right">3.8</td>
+<td>510</td>
+<td>YES</td>
+<td>096762 24488</td>
+<td>chicken fry biryani</td>
+</tr>
+<tr>
+<td>Helapuri Multicuisine </td>
+<td>Ground Floor, Ravi Plaza, Daba Gardens, Visakhapatnam - 530020 (Opposite Chitralaya Mall , Vizag)</td>
+<td align="right">4.1</td>
+<td>410</td>
+<td>YES</td>
+<td>7942685029</td>
+<td>chicken fried rice</td>
+</tr>
+<tr>
+<td>cascades restaurant</td>
+<td>No, 75 Feet Rd, Dolphin Area, Daba Gardens, Allipuram, Visakhapatnam, Andhra Pradesh 530020</td>
+<td align="right">4.3</td>
+<td>1,100.00</td>
+<td>YES</td>
+<td>093476 93112</td>
+<td>keema dosa</td>
+</tr>
+<tr>
+<td>manjeera </td>
+<td>Leela Plaza, Daba Garden Rd, Daba Gardens, Allipuram, Visakhapatnam, Andhra Pradesh 530020</td>
+<td align="right">4.2</td>
+<td>710</td>
+<td>NO</td>
+<td>7947414395</td>
+<td>grilled chicken</td>
+</tr>
+<tr>
+<td>Sai Krishna Paradise</td>
+<td> Lalitha Colony, Nehru Nagar, Daba Gardens, Visakhapatnam, Andhra Pradesh 530020</td>
+<td align="right">3.8</td>
+<td>410</td>
+<td>NO</td>
+<td>9999999999</td>
+<td>bbq grill chicken</td>
+</tr>
+<tr>
+<td>manasa restaruant</td>
+<td>Near Sangeet &amp; Geeth Theatre, Daba Gardens,Allipuram Main Rd, Visakhapatnam, Andhra Pradesh 530020</td>
+<td align="right">3.9</td>
+<td>310</td>
+<td>YES</td>
+<td>7942685410</td>
+<td>tandoori chicken</td>
+</tr>
+<tr>
+<td>sri alkaipuri family restaurant</td>
+<td>Daba Garden Rd, Saraswathi Jct, Daba Gardens, Allipuram, Visakhapatnam, Andhra Pradesh 530020</td>
+<td align="right">3.5</td>
+<td>410</td>
+<td>YES</td>
+<td>9133366788</td>
+<td>chicken noodles</td>
+</tr>
+<tr>
+<td>rajasthani dhaba</td>
+<td>31, 33, Leelamahal Up Rd, Daba Gardens, Allipuram, Visakhapatnam, Andhra Pradesh 530020</td>
+<td align="right">3.8</td>
+<td>300</td>
+<td>NO</td>
+<td>099669 42419</td>
+<td>dal makhani</td>
+</tr>
+<tr>
+<td>k&amp;v restaurant</td>
+<td>P77X+J6F, Unnamed Road, Dolphin Area, Daba Gardens, 104 Area, Visakhapatnam, Andhra Pradesh 530020</td>
+<td align="right">4</td>
+<td>170</td>
+<td>NO</td>
+<td>7947416072</td>
+<td>pot biryani</td>
+</tr>
+<tr>
+<td>Orange Restaurant</td>
+<td>House No 30-14-9, Daba Gardens, Visakhapatnam - 530020 (Saraswathi Park Junction)</td>
+<td align="right">3.7</td>
+<td>410</td>
+<td>YES</td>
+<td>083744 55255</td>
+<td> </td>
+</tr>
+<tr>
+<td>Jaihind Restaurant</td>
+<td>P77W+PVJ, Allipuram Main Rd, Daba Gardens, Mahaarajupeta, Visakhapatnam, Andhra Pradesh 530020</td>
+<td align="right">3.6</td>
+<td>1550</td>
+<td>NO</td>
+<td>8912571819</td>
+<td> </td>
+</tr>
+<tr>
+<td>Visakha Military Hotel</td>
+<td>31-35-14, Allipuram Main Rd, Bangaramma Metta, Daba Gardens, Allipuram, Visakhapatnam, Andhra Pradesh 530020</td>
+<td align="right">4</td>
+<td>450</td>
+<td>YES</td>
+<td>096661 74848</td>
+<td>Military Meal</td>
+</tr>
+	</table>
+</body>
+</html>

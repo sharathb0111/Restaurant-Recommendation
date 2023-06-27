@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Restaurant Recommendation</title>
+	<style>
+		table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+		}
+ 
+	</style>
+	<script>
+		function filterTable() {
+			// Get input values
+			var restaurant = document.getElementById("restaurant-search").value.toLowerCase();
+			var address = document.getElementById("address-search").value.toLowerCase();
+			var minRating = parseInt(document.getElementById("rating-min").value);
+			var maxPrice = parseInt(document.getElementById("price-max").value);
+			var onlineBooking = document.getElementById("online-booking-select").value;
+			
+			// Get table rows
+			var tableRows = document.getElementById("myTable").rows;
+
+			// Loop through table rows and hide/show based on input values
+			for (var i = 1; i < tableRows.length; i++) {
+				var row = tableRows[i];
+				var restaurantName = row.cells[0].textContent.toLowerCase();
+				var addressName = row.cells[1].textContent.toLowerCase();
+				var rating = parseInt(row.cells[2].textContent);
+				var price = parseInt(row.cells[3].textContent);
+				var bookingStatus = row.cells[4].textContent.toLowerCase();
+				
+				if (restaurantName.includes(restaurant) && addressName.includes(address) && rating >= minRating && price <= maxPrice && (onlineBooking === "all" || bookingStatus === onlineBooking)) {
+					row.style.display = "";
+				} else {
+					row.style.display = "none";
+				}
+			}
+		}
+	</script>
+
+</head>
+<body>
+	<h2>Welcome To My Page</h2>
+	<label for="restaurant-search">Restaurant:</label>
+	<input type="text" id="restaurant-search">
+	<label for="address-search">Address:</label>
+	<input type="text" id="address-search">
+	<label for="rating-min">Minimum Rating:</label>
+	<input type="number" id="rating-min" min="1" max="5" value="1">
+	<label for="price-max">Maximum Price:</label>
+	<input type="number" id="price-max" min="210" max="1100" value="1100">
+	<label for="online-booking-select">Online Booking:</label>
+	<select id="online-booking-select">
+		<option value="all">All</option>
+		<option value="yes">Yes</option>
+		<option value="no">No</option>
+	</select>
+	<button onclick="filterTable()">Filter</button>
+<br>
+<br>
+	<table id="myTable">
+		<tr>
+			<th>Restaurant</th>
+			<th>Address</th>
+			<th>Rating</th>
+			<th>Price</th>
+            <th>OnlineBooking</th>
+            <th>Phone</th>
+            <th>Famous Dishes</th>
+
+		</tr>
+<tr>
+<td><a style="text-decoration: none; color:#000000; font-weight:bold; " href="https://www.zomato.com/visakhapatnam/arabian-nights-allipuram-vizag/order"target="_blank">arabian knights</a></td>
+<td><a style="text-decoration: none" href="https://www.google.com/maps/place/Arabian+Knights+Daba+Gardens/@17.7165562,83.3025915,15z/data=!4m6!3m5!1s0x3a39439dfe54ba3d:0xc1d0789e8cc6bed9!8m2!3d17.7165562!4d83.3025915!16s%2Fg%2F11h3m7y0bf"target="_blank">3rd floor, Opp Bata showroom, above Aptronix, Daba Gardens, Allipuram, Visakhapatnam, Andhra Pradesh 530020</a></td>
+<td align="right">4</td>
+<td>510</td>
+<td>YES</td>
+<td>098569 93993</td>
+<td>Biryani</td>
+</tr>
+<tr>
+<td>santhosh dhaba</td>
+<td>30-9-1, Sharda Street, Daba Garden Rd, beside Center Point Hotel, Visakhapatnam, Andhra Pradesh 530020</td>
+<td align="right">3.8</td>
+<td>400</td>
+<td>YES</td>
+<td>086396 89258</td>
+<td>Veg Biryani</td>
+</tr>
+<tr>
+<td>Collection O Rr Grand</td>
+<td>LIC Building, Jail Rd, Daba Gardens, Allipuram, Visakhapatnam, Andhra Pradesh 530020</td>
+<td align="right">3.9</td>
+<td>610</td>
+<td>NO</td>
+<td>0124 620 1530</td>
+<td>chicken Kalmi kebab</td>
+</tr>
+<tr>
+<td>Rajdhani hotel</td>
+<td>30-12-19, Ranga St, Daba Gardens, Junction, Visakhapatnam, Andhra Pradesh 530020</td>
+<td align="right">3.7</td>
+<td>260</td>
+<td>NO</td>
+<td>094402 00330</td>
+<td>NOn veg platter</td>
+</tr>
+<tr>
+<td>Bombay Restaurant</td>
+<td>31-32-75 Gantasala Marg Ladies Gate, Beside, Jothee Theatre Rd, Daba Gardens, Visakhapatnam, Andhra Pradesh 530020</td>
+<td align="right">3.9</td>
+<td>810</td>
+<td>YES</td>
+<td>089125 62222</td>
+<td>Chicken Biryani</td>
+</tr>
+<tr>
+<td>shree shyam restaurant</td>
+<td>30-11-2, first left lane before hdfc bank, Daba Gardens, 530020, 11-2, Lakshmi St, Visakhapatnam, Andhra Pradesh 530020</td>
+<td align="right">3.7</td>
+<td>210</td>
+<td>YES</td>
+<td>9999999999</td>
+<td>veg pulao</td>
+</tr>
+<tr>
+<td>Horizon Restaurant</td>
+<td>7th floor, Dolphin hotel, 75 Feet Road, Daba Garden Rd, Dolphin Area, Visakhapatnam, Andhra Pradesh 530020</td>
+<td align="right">4.5</td>
+<td>1,100.00</td>
+<td>NO</td>
+<td>0891 662 2444</td>
+<td> </td>
+</tr>
+<tr>
+<td>ganapathi restaurant</td>
+<td>31-32-74, Beside Jothee Theatre Ladies Gate, behind Dolphin hotel, Daba Gardens, Visakhapatnam, Andhra Pradesh 530020</td>
+<td align="right">3.9</td>
+<td>410</td>
+<td>YES</td>
+<td>093471 62019</td>
+<td>jain food</td>
+</tr>
+<tr>
+<td>Hotel amaravathi</td>
+<td>Amaravati Building Cell Point upstairs, 30-15-110, Daba Garden Rd, Lalitha Colony, Daba Gardens, Allipuram, Visakhapatnam, Andhra Pradesh 530020</td>
+<td align="right">3.7</td>
+<td>510</td>
+<td>YES</td>
+<td>0891 666 0124</td>
+<td>chicken fried rice</td>
+</tr>
+<tr>
+<td>spicy paradise</td>
+<td>Yellamathota Road, Jagadamba Theatre, Yellammagudi Backside, Daba Gardens, Jagadamba Junction, Visakhapatnam, Andhra Pradesh 535002</td>
+<td align="right">3.6</td>
+<td>450</td>
+<td>YES</td>
+<td>040 6740 8400</td>
+<td>Chicken Boneless Biryani</td>
+</tr>
+<tr>
+<td>Ashoka Restaruant</td>
+<td>30-13-11, Leelamahal Up Rd, Daba Gardens, Allipuram, Visakhapatnam, Andhra Pradesh 530020</td>
+<td align="right">3.7</td>
+<td>480</td>
+<td>YES</td>
+<td>7947116630</td>
+<td>chicken Kalmi kebab</td>
+</tr>
+<tr>
+<td>Ramayya Veg. Restaurant</td>
+<td>8, Daba Garden Rd, Near Bank Of Baroda, Prakasaraopeta, Daba Gardens, Ram Nagar, Visakhapatnam, Andhra Pradesh 530020</td>
+<td align="right">4</td>
+<td>250</td>
+<td>NO</td>
+<td>093476 93112</td>
+<td>meals</td>
+</tr>
+<tr>
+<td>indian flavours </td>
+<td>Ladies gate, Jothee Theatre Rd, Daba Gardens, Visakhapatnam, Andhra Pradesh 530020</td>
+<td align="right">3.8</td>
+<td>510</td>
+<td>YES</td>
+<td>096762 24488</td>
+<td>chicken fry biryani</td>
+</tr>
+<tr>
+<td>Helapuri Multicuisine </td>
+<td>Ground Floor, Ravi Plaza, Daba Gardens, Visakhapatnam - 530020 (Opposite Chitralaya Mall , Vizag)</td>
+<td align="right">4.1</td>
+<td>410</td>
+<td>YES</td>
+<td>7942685029</td>
+<td>chicken fried rice</td>
+</tr>
+<tr>
+<td>cascades restaurant</td>
+<td>NO, 75 Feet Rd, Dolphin Area, Daba Gardens, Allipuram, Visakhapatnam, Andhra Pradesh 530020</td>
+<td align="right">4.3</td>
+<td>1,100.00</td>
+<td>YES</td>
+<td>093476 93112</td>
+<td>keema dosa</td>
+</tr>
+<tr>
+<td>manjeera </td>
+<td>Leela Plaza, Daba Garden Rd, Daba Gardens, Allipuram, Visakhapatnam, Andhra Pradesh 530020</td>
+<td align="right">4.2</td>
+<td>710</td>
+<td>NO</td>
+<td>7947414395</td>
+<td>grilled chicken</td>
+</tr>
+<tr>
+<td>Sai Krishna Paradise</td>
+<td> Lalitha Colony, Nehru Nagar, Daba Gardens, Visakhapatnam, Andhra Pradesh 530020</td>
+<td align="right">3.8</td>
+<td>410</td>
+<td>NO</td>
+<td>9999999999</td>
+<td>bbq grill chicken</td>
+</tr>
+<tr>
+<td>manasa restaruant</td>
+<td>Near Sangeet &amp; Geeth Theatre, Daba Gardens,Allipuram Main Rd, Visakhapatnam, Andhra Pradesh 530020</td>
+<td align="right">3.9</td>
+<td>310</td>
+<td>YES</td>
+<td>7942685410</td>
+<td>tandoori chicken</td>
+</tr>
+<tr>
+<td>sri alkaipuri family restaurant</td>
+<td>Daba Garden Rd, Saraswathi Jct, Daba Gardens, Allipuram, Visakhapatnam, Andhra Pradesh 530020</td>
+<td align="right">3.5</td>
+<td>410</td>
+<td>YES</td>
+<td>9133366788</td>
+<td>chicken NOodles</td>
+</tr>
+<tr>
+<td>rajasthani dhaba</td>
+<td>31, 33, Leelamahal Up Rd, Daba Gardens, Allipuram, Visakhapatnam, Andhra Pradesh 530020</td>
+<td align="right">3.8</td>
+<td>300</td>
+<td>NO</td>
+<td>099669 42419</td>
+<td>dal makhani</td>
+</tr>
+<tr>
+<td>k&amp;v restaurant</td>
+<td>P77X+J6F, Unnamed Road, Dolphin Area, Daba Gardens, 104 Area, Visakhapatnam, Andhra Pradesh 530020</td>
+<td align="right">4</td>
+<td>170</td>
+<td>NO</td>
+<td>7947416072</td>
+<td>pot biryani</td>
+</tr>
+<tr>
+<td>Orange Restaurant</td>
+<td>House NO 30-14-9, Daba Gardens, Visakhapatnam - 530020 (Saraswathi Park Junction)</td>
+<td align="right">3.7</td>
+<td>410</td>
+<td>YES</td>
+<td>083744 55255</td>
+<td> </td>
+</tr>
+<tr>
+<td>Jaihind Restaurant</td>
+<td>P77W+PVJ, Allipuram Main Rd, Daba Gardens, Mahaarajupeta, Visakhapatnam, Andhra Pradesh 530020</td>
+<td align="right">3.6</td>
+<td>1550</td>
+<td>NO</td>
+<td>8912571819</td>
+<td> </td>
+</tr>
+<tr>
+<td>Visakha Military Hotel</td>
+<td>31-35-14, Allipuram Main Rd, Bangaramma Metta, Daba Gardens, Allipuram, Visakhapatnam, Andhra Pradesh 530020</td>
+<td align="right">4</td>
+<td>450</td>
+<td>YES</td>
+<td>096661 74848</td>
+<td>Military Meal</td>
+</tr>
+<tr>
+<td>Dolphin Hotel</td>
+<td>75 Feet Road, Dolphin Hotel Jct, Daba Gardens, Visakhapatnam, Andhra Pradesh 530020</td>
+<td align="right">4.3</td>
+<td>900</td>
+<td>YES</td>
+<td>0891 662 2444</td>
+<td>Grilled chicken sandwich</td>
+</tr>
+<tr>
+<td>The Spicy Venue</td>
+<td>Siripuram Cir, Balaji Nagar, Siripuram, Visakhapatnam, Andhra Pradesh 530003</td>
+<td align="right">4.1</td>
+<td>800</td>
+<td>Yes</td>
+<td>9492655553</td>
+<td>Apricot Delight</td>
+</tr>
+<tr>
+<td>Sri Kanya Comfort</td>
+<td>M1, Siripuram, Siripuram, Visakhapatnam - 530003 (Beside Gurajada Kalakshetram)</td>
+<td align="right">4.1</td>
+<td>610</td>
+<td>Yes</td>
+<td>0891 2533333</td>
+<td>Fried Chicken Biryani</td>
+</tr>
+<tr>
+<td>Rajus Kitchen</td>
+<td>No 9-17-21, GM Mansion, CBM Compound, Opposite Road To Bethany School, VIP Rd, Visakhapatnam, Andhra Pradesh 530003</td>
+<td align="right">3.8</td>
+<td>510</td>
+<td>Yes</td>
+<td>7416444459</td>
+<td>Chicken Fry Biryani With Chicken Lollipop</td>
+</tr>
+<tr>
+<td>Paradise</td>
+<td>9-14-1, VIP Rd, Sector 4, BM Compound, Siripuram, Visakhapatnam, Andhra Pradesh 530003</td>
+<td align="right">3.8</td>
+<td>410</td>
+<td>Yes</td>
+<td>_</td>
+<td>Dum Biryani</td>
+</tr>
+<tr>
+<td>Barbeque Nations</td>
+<td>4rd Floor, D. no 10-50-12, Sripuram, 9-Block, Waltair Main Rd, opposite Governor Bungalow, beside Reliance Trends, Andhra Pradesh 530003</td>
+<td align="right">4.4</td>
+<td>1,500.00</td>
+<td>Yes</td>
+<td>7416106000</td>
+<td>Cajun Potatoes</td>
+</tr>
+<tr>
+<td>Ironhill Brewery</td>
+<td>House No 9-30-1, Plot No 25, First Floor, Siripuram, Visakhapatnam - 530003 (Near Dutt Island , Above PMJ Jewellers)</td>
+<td align="right">4.1</td>
+<td>1,500.00</td>
+<td>Yes</td>
+<td>8977767676</td>
+<td>Vanilla Panna Cotta, Peri Peri Chicken</td>
+</tr>
+<tr>
+<td>Mandi Croods</td>
+<td>Door No 8-43-8, Chinna Waltair Main Road, China Waltiar, Visakhapatnam - 530003 (Opposite Kotak Mahindra Bank)</td>
+<td align="right">4</td>
+<td>410</td>
+<td>Yes</td>
+<td>091006 21316</td>
+<td>Chicken Mandi</td>
+</tr>
+<tr>
+<td>Hotel Meghalaya </td>
+<td>Hotel Meghalaya, Asilametta Junction, Asilmetta, Visakhapatnam - 530003</td>
+<td align="right">3.8</td>
+<td>750</td>
+<td>Yes</td>
+<td>6301957214</td>
+<td>Jadoh</td>
+</tr>
+<tr>
+<td>Foodex</td>
+<td>Block A, Udhyog Bhawan Complex, Chinna Waltair Main Rd, behind HSBC, Siripuram, Visakhapatnam, Andhra Pradesh 530003</td>
+<td align="right">4.1</td>
+<td>410</td>
+<td>Yes</td>
+<td>0891 2702552</td>
+<td>Pizzas,Sandwich&#39;s,cakes</td>
+</tr>
+<tr>
+<td>Sam&#39;s Griddle</td>
+<td>3rd Floor, Srikanya Canopy, Opp, Waltair Club, Siripuram, Visakhapatnam, Andhra Pradesh 530003</td>
+<td align="right">4.1</td>
+<td>1,100.00</td>
+<td>Yes</td>
+<td>_</td>
+<td>Spinach balls, chicken peri peri</td>
+</tr>
+<tr>
+<td>Kamat Restaurant</td>
+<td>Vuda Complex, Waltair Club Rd, Siripuram, Visakhapatnam, Andhra Pradesh 530003</td>
+<td align="right">3.7</td>
+<td>700</td>
+<td>Yes</td>
+<td>99886 46999</td>
+<td>Butter Masala Dosa &amp; Idli Vada Mix &amp; Onion Uttapam</td>
+</tr>
+<tr>
+<td>Maa Nethi Vindu</td>
+<td>Pandurangapuram, Visakhapatnam, Andhra Pradesh 530003</td>
+<td align="right">4.1</td>
+<td>410</td>
+<td>Yes</td>
+<td>_</td>
+<td>Pelli Bhojanam</td>
+</tr>
+<tr>
+<td>Tandoori Treats</td>
+<td>10-1-44/1, VIP Rd, CBM Compound, Opposite IDBI Bank, Siripuram, Visakhapatnam, Andhra Pradesh 530003</td>
+<td align="right">3.6</td>
+<td>600</td>
+<td>Yes</td>
+<td>_</td>
+<td>Chicken Fry, Chicken Lollipop, Boneless Chicken Biryani</td>
+</tr>
+<tr>
+<td>Fusion Foods</td>
+<td>beside Gurajada Kalakshetram, Siripuram, Visakhapatnam, Andhra Pradesh 530003</td>
+<td align="right">4.5</td>
+<td>800</td>
+<td>Yes</td>
+<td>_</td>
+<td>Mughlai Chicken Biryani, Mutton Fry Biryani</td>
+</tr>
+<tr>
+<td>The Gateway Hotel</td>
+<td>Dr NTR Beach Rd, Pandurangapuram, Visakhapatnam, Andhra Pradesh 530002</td>
+<td align="right">4.6</td>
+<td>1,200.00</td>
+<td>Yes</td>
+<td>8916623670</td>
+<td>Spl. Mughlai Chicken Biryani,Prawns Biryani</td>
+</tr>
+<tr>
+<td>Hotel Green Park </td>
+<td>Nehru Nagar, Ram Nagar, Visakhapatnam, Andhra Pradesh 530020</td>
+<td align="right">4.6</td>
+<td>1,100.00</td>
+<td>Yes</td>
+<td>8916615151</td>
+<td>Tandoori Non Veg Platter</td>
+</tr>
+<tr>
+<td>AB&#39;s - Absolute Barbecues</td>
+<td>FOURTH FLOOR, Plot No. 244A UMA VINAYAGAR, Dwaraka Nagar, Visakhapatnam, Andhra Pradesh 530016</td>
+<td align="right">4.5</td>
+<td>1,600.00</td>
+<td>Yes</td>
+<td>7337383763</td>
+<td>hawkers grilled fish<br/></td>
+</tr>
+<tr>
+<td>Upland Bristo</td>
+<td>10-26-1/1, opposite to Waltair Club, Waltair Uplands, Ravindra Nagar, Visakhapatnam, Andhra Pradesh 530003</td>
+<td align="right">4.5</td>
+<td>1,200.00</td>
+<td>Yes</td>
+<td>8088261886</td>
+<td>Cheese Nachos, Veg Quesadilla, Herbed Chicken Broth Soup</td>
+</tr>
+<tr>
+<td>Bombay Restaurant</td>
+<td>31-32-75 Gantasala Marg Ladies Gate, Beside, Jothee Theatre Rd, Daba Gardens, Visakhapatnam, Andhra Pradesh 530020</td>
+<td align="right">3.8</td>
+<td>450</td>
+<td>Yes</td>
+<td>8912562222</td>
+<td>Bombay Special Mixed Biryani, Chicken Malai Kebab</td>
+</tr>
+<tr>
+<td>Novotel Visakhapatnam</td>
+<td>Dr NTR Beach Rd, Krishna Nagar, Maharani Peta, Visakhapatnam, Andhra Pradesh 530002</td>
+<td align="right">4.2</td>
+<td>3,000.00</td>
+<td>Yes</td>
+<td>8912822222</td>
+<td>Barbequed Chicken,Lobster,Prawn,Chennai Shrimp</td>
+</tr>
+<tr>
+<td>Brew &#39;n&#39; Bistro</td>
+<td>Ground Madhu Dwarapu Garden Building, 102, Dr NTR Beach Rd, near KKR Goutham School, Lawsons Bay Colony, Visakhapatnam, Andhra Pradesh 530017</td>
+<td align="right">3.6</td>
+<td>500</td>
+<td>Yes</td>
+<td>9440373839</td>
+<td>Alfredo [ Chicken Pasta ], Bnb Club Veg Sandwich</td>
+</tr>
+<tr>
+<td>Somaa Restobar</td>
+<td>4TH FLOOR, VIP CENTER, VIP Rd, Siripuram, Visakhapatnam, Andhra Pradesh 530003</td>
+<td align="right">4.2</td>
+<td>800</td>
+<td>Yes</td>
+<td>9211112666</td>
+<td>Special Chicken Boneless Biryani, Chicken Mughlai Zafrani Biryani</td>
+</tr>
+<tr>
+<td>The Vizag Drive in</td>
+<td>4-72-14, Dr NTR Beach Rd, next to BPCL Petrol Bunk, Lawsons Bay Colony, MVP Colony, Visakhapatnam, Andhra Pradesh 530017</td>
+<td align="right">4</td>
+<td>600</td>
+<td>No</td>
+<td>089774 74747</td>
+<td>shawarma</td>
+</tr>
+<tr>
+<td>Godavari Restaurant</td>
+<td>Lawsons Bay Colony, Pedda Waltair, Visakhapatnam, Andhra Pradesh 530017</td>
+<td align="right">4.1</td>
+<td>500</td>
+<td>Yes</td>
+<td>078937 23450</td>
+<td>Sea foods,Andhra Meals</td>
+</tr>
+<tr>
+<td>Athidhi Devo Bhava</td>
+<td>Vijayanagar Colony, Lawsons Bay Colony, Pedda Waltair, Visakhapatnam, Andhra Pradesh 530017</td>
+<td align="right">4.2</td>
+<td>800</td>
+<td>Yes</td>
+<td>081068 96789</td>
+<td>Veg Meals,Veg Pulao</td>
+</tr>
+<tr>
+<td>Hashtag Restro Cafe</td>
+<td>Plot no 171, near Delhi public school,Lawson&#39;s bay, Visakhapatnam, Andhra Pradesh 530017</td>
+<td align="right">3.7</td>
+<td>600</td>
+<td>Yes</td>
+<td>075692 68682</td>
+<td>Coffee,Cappacino,Deserts</td>
+</tr>
+<tr>
+<td>Arun&#39;s Paradise Restaurant</td>
+<td>Shop No. 18, Adarsh Nagar Rd, Ushodaya Junction, Sector 12, MVP Colony, Visakhapatnam, Andhra Pradesh 530017</td>
+<td align="right">3.6</td>
+<td>500</td>
+<td>Yes</td>
+<td>096185 56363</td>
+<td>Tiffins,Fried Rice,Biryanis</td>
+</tr>
+<tr>
+<td>Gismat Arabic Restaurant</td>
+<td>RK, 1st Floor Gismat Arabic Restaurant, Lawson&#39;s Bay Coloney, Dr NTR Beach Rd, Visakhapatnam, Andhra Pradesh 530017</td>
+<td align="right">3.9</td>
+<td>800</td>
+<td>Yes</td>
+<td>083676 57585</td>
+<td>Chicken Mandi</td>
+</tr>
+<tr>
+<td>Red Velvet</td>
+<td>171, 1-118-17, MIG, 12, Adarsh Nagar Rd, Near Ushodaya Junction, Sector 12, MVP Colony, Visakhapatnam, Andhra Pradesh 530017</td>
+<td align="right">4.2</td>
+<td>400</td>
+<td>Yes</td>
+<td>098096 11234</td>
+<td>Sandwich, Burger, Pizza, Fast Food, Chinese, Shake, Beverages, Desserts</td>
+</tr>
+<tr>
+<td>Six Degrees</td>
+<td>1-83-29, MVP Double Rd, MVP Sector 7, Sector 4, Sector 5, MVP Colony, Visakhapatnam, Andhra Pradesh 530017</td>
+<td align="right">3.9</td>
+<td>600</td>
+<td>Yes</td>
+<td>_</td>
+<td>Special Mushroom Biryani, Risotto Al Forno, Risotto Funghi E Zafferano</td>
+</tr>
+<tr>
+<td>My Restaurant</td>
+<td>NH16, behind Pot Biryani Point, Shivaji Palem, Isukathota, Maddilapalem, Visakhapatnam, Andhra Pradesh 530022</td>
+<td align="right">4</td>
+<td>600</td>
+<td>Yes</td>
+<td>088865 33555</td>
+<td>Pot Biryanis</td>
+</tr>
+<tr>
+<td>Dine Destiny</td>
+<td>Hotel Ocean Vista Bay,Cricket Academy, Dr NTR Beach Rd, East Point Colony, Visakhapatnam, Andhra Pradesh 530017</td>
+<td align="right">4.6</td>
+<td>600</td>
+<td>Yes</td>
+<td>095228 28289</td>
+<td>Classic Margherita Pizza, Chicken Peri Peri Dine Destiny Pizza</td>
+</tr>
+<tr>
+<td>The Red Box</td>
+<td>MVP Double Rd, MVP Sector 7, Sector 4, Sector 5, MVP Colony, Visakhapatnam, Andhra Pradesh 530017</td>
+<td align="right">3.9</td>
+<td>450</td>
+<td>Yes</td>
+<td>098488 81198</td>
+<td>Momos,Chinese Noodles</td>
+</tr>
+<tr>
+<td>Real Deepak Punjabi Dhaba</td>
+<td>1st 50-40-20/A Opp Karur Vysya Bank, TPT Colony, Seethammadara, Visakhapatnam, Andhra Pradesh 530013</td>
+<td align="right">3.8</td>
+<td>700</td>
+<td>Yes</td>
+<td>081214 41199</td>
+<td>Chicken Biryani,Mutton Biryani, Kaju Curry</td>
+</tr>
+<tr>
+<td>Mr.Kitchen</td>
+<td>Door No. 55, 15-10, HB Colony Rd, Bhanu Nagar, Seethammadara, Visakhapatnam, Andhra Pradesh 530022</td>
+<td align="right">4.3</td>
+<td>500</td>
+<td>Yes</td>
+<td>083411 51500</td>
+<td>Chicken Dum Biryani,Non Veg Starters</td>
+</tr>
+<tr>
+<td>V Delights</td>
+<td>Besides Krishna College, opp. Union Bank of India, H B Colony, Visakhapatnam, Andhra Pradesh 530022</td>
+<td align="right">4.9</td>
+<td>600</td>
+<td>Yes</td>
+<td>_</td>
+<td>Ragi Sangati,Chicken Mughalai Biryani,Hariyali Fish Biryani</td>
+</tr>
+<tr>
+<td>Cafe Military</td>
+<td>JR Nagar, SadaramComplex, Venkojipalem, Visakhapatnam, Andhra Pradesh 530022</td>
+<td align="right">4.1</td>
+<td>350</td>
+<td>Yes</td>
+<td>_</td>
+<td>Idly, Poori, Avari Kudum, Ghee Masala Dosa, Pesarattu Upma, Sambar Idli</td>
+</tr>
+<tr>
+<td>Hunger Wheelz</td>
+<td>Beside Children&#39;s Park 50-117-17, 10/4, 60 Feet Road, North Extension, Seethammadara, Visakhapatnam, Andhra Pradesh 530013</td>
+<td align="right">4.2</td>
+<td>250</td>
+<td>Yes</td>
+<td>099669 69666</td>
+<td>Veg &amp; Non Veg Tiffins</td>
+</tr>
+<tr>
+<td>Millet Rasoi</td>
+<td>55-1-19/1, behind Vrindavan Ayurvedic Village, opp. goshala, JR Nagar, Venkojipalem, Visakhapatnam, Andhra Pradesh 530022</td>
+<td align="right">4.3</td>
+<td>200</td>
+<td>Yes</td>
+<td>094413 88855</td>
+<td>Millets</td>
+</tr>
+<tr>
+<td>Fry Bucket Biryani</td>
+<td>Shop No 5, Junction, beside MuraliKrishna Temple, near Isukathota, Maddilapalem, Visakhapatnam, Andhra Pradesh 530022</td>
+<td align="right">3.9</td>
+<td>300</td>
+<td>Yes</td>
+<td>_</td>
+<td>Bucket Dum or Fry piece biryani&#39;s</td>
+</tr>
+<tr>
+<td>Hungry Hippo Resto Cafe</td>
+<td>50-49-43/A, TPT Colony, Balayya Sastri Layout, Seethammadara, Visakhapatnam, Andhra Pradesh 530013</td>
+<td align="right">3.8</td>
+<td>500</td>
+<td>Yes</td>
+<td>_</td>
+<td>pizza, lasagna &amp; pasta,grilled chicken &amp; milkshakes.</td>
+</tr>
+<tr>
+<td>Bandits Of Biryani-B. O. B</td>
+<td>50-39-9, near ganesh babu hospital, adjacent lane, TPT Colony, Balayya Sastri Layout, Seethammadara, Visakhapatnam, Andhra Pradesh 530013</td>
+<td align="right">3.9</td>
+<td>500</td>
+<td>Yes</td>
+<td>093818 60775</td>
+<td>Chicken Dum Biryani,Mughali Biryani</td>
+</tr>
+	</table>
+</body>
+</html>

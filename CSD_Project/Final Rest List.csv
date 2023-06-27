@@ -1,0 +1,111 @@
+Restaurant Name,Address,Ratings,price,OnlineBooking,Phone,Famous Dishes
+Dwarakamaigumagumalu,"Opposite SBI, Priyadarshini Colony, Srinivasa Nagar, Madhurawada, Visakhapatnam, Andhra Pradesh",2,330,YES,8919389465,Sambar
+Nawabs," Kommadi Rd junction , Bakkannapalem, Madhurawada, Visakhapatnam, Andhra Pradesh 530041",3,450,YES,9182212256,Noodels
+Chikoos," No 18-133/2/11, Ground Floor, 102, 103, Raksha Sri Hari Residency, SBI Colony, Pothinamallayya Palem, Visakhapatnam, Andhra Pradesh 530041",3,230,YES,8919389465,Dum Biryani
+Abhiruchi,"1, Vizag - Srikakulam Hwy, Anand Nagar, Pothinamallayya Palem, Visakhapatnam, Andhra Pradesh 530041",3,560,YES,9182212256,Tandoories
+Prince dhaba," NH5 Road, Pothimallayapalem, Near YSR Stadium, Madhurawada, Vizag, Madhurawada",3,150,YES,8991923568,Tikka
+Eatsandtreats,"3-13/17/8 Chandrampalem, Srinivasa Nagar, Madhurawada, Visakhapatnam, Andhra Pradesh 530041",3,300,YES,9182212256,Chilly chiken
+Kukrooko,"D.no -13-45 H.B Colony, Pothinamallayya Palem, Visakhapatnam, Andhra Pradesh 530041",3,180,YES,8991923568,Mughlai  Biryani
+Teluguruchulu,"Shop No. 110, Surya Complex PM Palem Main Road, Pothinamallayya Palem Rd, Madhurawada, Visakhapatnam, Andhra Pradesh 530014",3,560,YES,9441880943,Vegcurries
+Delicious,"Chandrampalem, Srinivasa Nagar, Madhurawada, Visakhapatnam, Andhra Pradesh 530041",3,780,YES,9182212256,Mughlai Biryani
+Konaseema,"2-127/18/9, 100 Feet Rd, Mithilapuri Colony, It-sez, Road, Visakhapatnam, Andhra Pradesh 530048",4,800,YES,7780253367,Kodi palav
+Sri Alkaipuri Family Restaurant," Daba Garden Rd, Saraswathi Jct, Daba Gardens, Allipuram, Visakhapatnam, Andhra Pradesh 530020",4,410,YES,9133366788,Chicken Noodles
+Grillseat," NH5 Road, Pothimallayapalem, Near YSR Stadium, Madhurawada, Vizag, Madhurawada",4,230,YES,7780253367,Kabab
+bBarbecue,"3rd Floor, Arena Building, 100 Feet Rd, adjacent to Mango Hero Showroom, Midhilapuri Vuda Colony, Madhurawada, Visakhapatnam, Andhra Pradesh 530041",4,900,YES,7780253367,Kebabs
+Jaihind Restaurant,"P77W+PVJ, Allipuram Main Rd, Daba Gardens, Mahaarajupeta, Visakhapatnam, Andhra Pradesh 530020",4,900,NO,8912571819,
+Tandoori Treats,"10-1-44/1, VIP Rd, CBM Compound, Opposite IDBI Bank, Siripuram, Visakhapatnam, Andhra Pradesh 530003",4,600,YES,7893479798,"Chicken Fry, Chicken Lollipop, Boneless Chicken Biryani"
+Brew 'n' Bistro,"Ground Madhu Dwarapu Garden Building, 102, Dr NTR Beach Rd, near KKR Goutham School, Lawsons Bay Colony, Visakhapatnam, Andhra Pradesh 530017",4,500,YES,9440373839,"Alfredo Chicken Pasta, Bnb Club Veg Sandwich"
+Arun's Paradise Restaurant," Shop No. 18, Adarsh Nagar Rd, Ushodaya Junction, Sector 12, MVP Colony, Visakhapatnam, Andhra Pradesh 530017",4,500,YES,9618556363,"Tiffins,Fried Rice,Biryanis"
+Spicy Paradise,"Yellamathota Road, Jagadamba Theatre, Yellammagudi Backside, Daba Gardens, Jagadamba Junction, Visakhapatnam, Andhra Pradesh 535002",4,450,YES,4067408400,Chicken Boneless Biryani
+Biryani Bowl,"D 1-79-6, Plot 175, Sector 3, MVP Colony, Vizag",4,400,YES,9550864206,Ghee Dum Biryani
+72 biryanis,"15, Seethammadhara Rd, Gandhi Nagar, P & T Colony, Seethammadara, Visakhapatnam, Andhra Pradesh 530013",4,300,YES,9491177272,Chicken Fry Biryani 
+Kamat Restaurant,"Vuda Complex, Waltair Club Rd, Siripuram, Visakhapatnam, Andhra Pradesh 530003",4,700,YES,9988646999,Butter Masala Dosa & Idli Vada Mix & Onion Uttapam
+Hashtag Restro Cafe,"Plot no 171, near Delhi public school,Lawson's bay, Visakhapatnam, Andhra Pradesh 530017",4,600,YES,7569268682,"Coffee,Cappacino,Deserts"
+Hotel amaravathi," Amaravati Building Cell Point upstairs, 30-15-110, Daba Garden Rd, Lalitha Colony, Daba Gardens, Allipuram, Visakhapatnam, Andhra Pradesh 530020",4,510,YES,8916660124,Chicken Fried Rice
+Ashoka Restaruant,"30-13-11, Leelamahal Up Rd, Daba Gardens, Allipuram, Visakhapatnam, Andhra Pradesh 530020",4,480,YES,7947116630, Chicken Kalmi kebab
+Cityhert," Chandrampalem, Srinivasa Nagar, Madhurawada, Visakhapatnam, Andhra Pradesh 530041",4,460,YES,8991923568,Andhra chicken curry
+Orange Restaurant,"House NO 30-14-9, Daba Gardens, Visakhapatnam - 530020 (Saraswathi Park Junction)",4,410,YES,8374455255,
+Rajdhani Hotel,"30-12-19, Ranga St, Daba Gardens, Junction, Visakhapatnam, Andhra Pradesh 530020",4,260,NO,9440200330,Non veg platter
+Rajuskitchen,"Beside SBI bank,P M Palem, Madhurawada, Visakhapatnam, Andhra Pradesh 530041",4,250,YES,7780253367,Kavujupetta fry
+Shree Shyam Restaurant,"30-11-2, first left lane before hdfc bank, Daba Gardens, 530020, 11-2, Lakshmi St, Visakhapatnam, Andhra Pradesh 530020",4,210,YES,,Veg Pulao
+Hotel Meghalaya ,"Hotel Meghalaya, Asilametta Junction, Asilmetta, Visakhapatnam - 530003",4,750,YES,6301957214,Jadoh
+Real Deepak Punjabi Dhaba,"1st 50-40-20/A Opp Karur Vysya Bank, TPT Colony, Seethammadara, Visakhapatnam, Andhra Pradesh 530013",4,700,YES,8121441199,"Chicken Biryani,Mutton Biryani, Kaju Curry"
+Indian Flavours ,"Ladies gate, Jothee Theatre Rd, Daba Gardens, Visakhapatnam, Andhra Pradesh 530020",4,510,YES,9676224488,Chicken Fry Biryani
+Rajus Kitchen," No 9-17-21, GM Mansion, CBM Compound, Opposite Road To Bethany School, VIP Rd, Visakhapatnam, Andhra Pradesh 530003",4,510,YES,7416444459,Chicken Fry Biryani With Chicken Lollipop
+Hungry Hippo Resto Cafe,"50-49-43/A, TPT Colony, Balayya Sastri Layout, Seethammadara, Visakhapatnam, Andhra Pradesh 530013",4,500,YES,,"pizza, lasagna & pasta,grilled chicken & milkshakes."
+Bombay Restaurant,"31-32-75 Gantasala Marg Ladies Gate, Beside, Jothee Theatre Rd, Daba Gardens, Visakhapatnam, Andhra Pradesh 530020",4,450,YES,8912562222,"Bombay Special Mixed Biryani, Chicken Malai Kebab"
+Sai Krishna Paradise," Lalitha Colony, Nehru Nagar, Daba Gardens, Visakhapatnam, Andhra Pradesh 530020",4,410,NO,,BBQ Grill Chicken
+Paradise Biryani,"9-14-1, VIP Rd, Sector 4, BM Compound, Siripuram, Visakhapatnam, Andhra Pradesh 530003",4,410,YES,9110391524,Dum Biryani
+Santhosh Dhaba,"30-9-1, Sharda Street, Daba Garden Rd, beside Center Point Hotel, Visakhapatnam, Andhra Pradesh 530020",4,400,YES,8639689258,Veg Biryani
+Rajasthani Dhaba,"31, 33, Leelamahal Up Rd, Daba Gardens, Allipuram, Visakhapatnam, Andhra Pradesh 530020",4,300,NO,9966942419,Dal Makhani
+Bombay Restaurant,"31-32-75 Gantasala Marg Ladies Gate, Beside, Jothee Theatre Rd, Daba Gardens, Visakhapatnam, Andhra Pradesh 530020",4,810,YES,8912562222,Chicken Biryani
+Gismat Arabic Restaurant,"RK, 1st Floor Gismat Arabic Restaurant, Lawson's Bay Coloney, Dr NTR Beach Rd, Visakhapatnam, Andhra Pradesh 530017",4,800,YES,8367657585,Chicken Mandi
+Collection O Rr Grand,"LIC Building, Jail Rd, Daba Gardens, Allipuram, Visakhapatnam, Andhra Pradesh 530020",4,610,NO,1246201530, Chicken Kalmi kebab
+Six Degrees,"1-83-29, MVP Double Rd, MVP Sector 7, Sector 4, Sector 5, MVP Colony, Visakhapatnam, Andhra Pradesh 530017",4,600,YES,,"Special Mushroom Biryani, Risotto Al Forno, Risotto Funghi E Zafferano"
+Bandits Of Biryani-B. O. B," 50-39-9, near ganesh babu hospital, adjacent lane, TPT Colony, Balayya Sastri Layout, Seethammadara, Visakhapatnam, Andhra Pradesh 530013",4,500,YES,9381860775,"Chicken Dum Biryani,Mughali Biryani"
+The Red Box,"MVP Double Rd, MVP Sector 7, Sector 4, Sector 5, MVP Colony, Visakhapatnam, Andhra Pradesh 530017",4,450,YES,9848881198,"Momos,Chinese Noodles"
+Ganapathi Restaurant,"31-32-74, Beside Jothee Theatre Ladies Gate, behind Dolphin hotel, Daba Gardens, Visakhapatnam, Andhra Pradesh 530020",4,410,YES,9347162019,Jain Food
+Ragugari Logili,"Rajugari Logili, Near Alluri Seetharama Raju Statue, KRM Colony, Maddilapalem, Visakhapatnam, Andhra Pradesh 530013",4,400,YES,8008505060,Mixed Pulao Chicken and Prawn
+Manasa Restaruant,"Near Sangeet & Geeth Theatre, Daba Gardens,Allipuram Main Rd, Visakhapatnam, Andhra Pradesh 530020",4,310,YES,7942685410,Tandoori Chicken
+Fry Bucket Biryani,"Shop No 5, Junction, beside MuraliKrishna Temple, near Isukathota, Maddilapalem, Visakhapatnam, Andhra Pradesh 530022",4,300,YES,,Bucket Dum or Fry piece biryani's
+Delicacies," opp. AS Raju Womens College, Sector 10, MVP Colony, Visakhapatnam, Andhra Pradesh 530017",4,200,YES,8912538361,Chicken 555 Biryani 
+Kruthinga,"2nd Floor, Union Bank Building, Junction, Pothinamallayya Palem, Visakhapatnam, Andhra Pradesh 530048",4,650,YES,9441880943,Natukodi curry
+The Vizag Drive in," 4-72-14, Dr NTR Beach Rd, next to BPCL Petrol Bunk, Lawsons Bay Colony, MVP Colony, Visakhapatnam, Andhra Pradesh 530017",4,600,No,8977474747,Chicken Shawarma
+My Restaurant,"NH16, behind Pot Biryani Point, Shivaji Palem, Isukathota, Maddilapalem, Visakhapatnam, Andhra Pradesh 530022",4,600,YES,8886533555,Pot Biryanis
+Arabian knights,"3rd floor, Opp Bata showroom, above Aptronix, Daba Gardens, Allipuram, Visakhapatnam, Andhra Pradesh 530020",4,510,YES,9856993993,Ginger Prawns
+Domino's Pizza,"10, Opposite Samatha College, Sector 7, MVP Colony, Vizag",4,500,YES,7799976025,The Fiive Chicken Feast Pizza
+Kelvin Scale Natural Ice Cream,"1-83-22, Plot MIG - 127, Sector-5, MVP Colony, Vizag",4,500,YES,6302542239,Kitkat Ice Cream Cake
+Visakha Military Hotel,"31-35-14, Allipuram Main Rd, Bangaramma Metta, Daba Gardens, Allipuram, Visakhapatnam, Andhra Pradesh 530020",4,450,YES,9666174848,Military Meal
+Million cafe," Million cafe, Srinivasa Nagar, Mubarak Colony, Yendada, Vizag, Andhra Pradesh",4,420,YES,8991923568,Fries
+Mandi Croods,"Door No 8-43-8, Chinna Waltair Main Road, China Waltiar, Visakhapatnam - 530003 (Opposite Kotak Mahindra Bank)",4,410,YES,9100621316,Chicken Mandi
+Amuratham," Mig 98/8, beside ttd kalyana mandala, MVP Colony, Visakhapatnam, Andhra Pradesh 530017",4,400,YES,8686622722,Non Veg Thali for 2
+Madhuram,"Shop No. 107, Surya Complex PM Palem Main Road, Pothinamallayya Palem Rd, Madhurawada, Visakhapatnam, Andhra Pradesh 530014",4,360,YES,8919389465,Dum birayani
+Rajus Kitchen,"Raju's Kitchen, Seethammadhara Road Near Alluri Seetharama Raja Statue, Seethammadara, Visakhapatnam, Andhra Pradesh 530013",4,300,YES,7416444459,Fried Chicken Biryani
+The Hungry Hippo Resto Cafe," 50-49-43/A, TPT Colony, Balayya Sastri Layout, Seethammadara, Visakhapatnam, Andhra Pradesh 530013",4,300,YES,7386155457,Cheese Balls
+Pizza hut,"Door HIG 2/3, Plot 1-83-13, Peda Waltair, Sector-3, MVP Colony, Vizag",4,300,YES,8638655077,Margherita Pizza
+Subway,"D HIG/92-A, Sector 1, MVP Colony, Vizag",4,300,YES,8179100576,Aloo Patty Sandwich
+Bandits of Biryani,"50-39-9, TPT Colony, Near Ghanesh Babu Hospital, Seethammadhara, Vizag",4,300,YES,9381860775,Chilli Chicken
+Ramayya Veg. Restaurant,"8, Daba Garden Rd, Near Bank Of Baroda, Prakasaraopeta, Daba Gardens, Ram Nagar, Visakhapatnam, Andhra Pradesh 530020",4,250,NO,9347693112,Meals
+KFC,"Survey 35 1-83-13, Ground Floor, Plot 2, Sector 3, MVP Double Road, MVP Colony, Vizag",4,200,YES,7794935448,Chicken Chizza
+Gatox Natural Ice Cream," Sree Sai Plaza 35/13 55-8 HB Colony Road Opp:GVMC Complex Seethammadhara, H B Colony, Visakhapatnam, Andhra Pradesh 530013",4,200,YES,9959794455,Sitaphal Ice Cream
+K&V Restaurant," P77X+J6F, Unnamed Road, Dolphin Area, Daba Gardens, 104 Area, Visakhapatnam, Andhra Pradesh 530020",4,170,NO,7947416072,Pot Biryani
+Second Innings From Mr.Little Idli,"Plot 126, Sector 10, MVP Double Road, MVP Colony, Vizag",4,100,YES,7396203475,Mysore Bonda
+Ironhill Brewery,"House No 9-30-1, Plot No 25, First Floor, Siripuram, Visakhapatnam - 530003 (Near Dutt Island , Above PMJ Jewellers)",4,"1,100.00",YES,8977767676,"Vanilla Panna Cotta, Peri Peri Chicken"
+Sam's Griddle,"3rd Floor, Srikanya Canopy, Opp, Waltair Club, Siripuram, Visakhapatnam, Andhra Pradesh 530003",4,"1,000.00",YES,9441472444,"Spinach balls, chicken peri peri"
+The Spicy Venue,"Siripuram Cir, Balaji Nagar, Siripuram, Visakhapatnam, Andhra Pradesh 530003",4,800,YES,9492655553,Apricot Delight
+Sri Kanya Comfort,"M1, Siripuram, Siripuram, Visakhapatnam - 530003 (Beside Gurajada Kalakshetram)",4,610,YES,8912533333,Fried Chicken Biryani
+Tfc,"11-85, Kommadi Rd, Bakkannapalem, Madhurawada, Visakhapatnam, Andhra Pradesh 530041",4,560,YES,9441880943,Fried rice
+Godavari Restaurant," Lawsons Bay Colony, Pedda Waltair, Visakhapatnam, Andhra Pradesh 530017",4,500,YES,7893723450,"Sea foods,Andhra Meals"
+Helapuri Multicuisine ,"Ground Floor, Ravi Plaza, Daba Gardens, Visakhapatnam - 530020 (Opposite Chitralaya Mall , Vizag)",4,410,YES,7942685029,Chicken Fried Rice
+Foodex,"Block A, Udhyog Bhawan Complex, Chinna Waltair Main Rd, behind HSBC, Siripuram, Visakhapatnam, Andhra Pradesh 530003",4,410,YES,8912702552,"Pizzas,Sandwich's,cakes"
+Maa Nethi Vindu,"Pandurangapuram, Visakhapatnam, Andhra Pradesh 530003",4,410,YES,,Pelli Bhojanam
+Cafe Military,"JR Nagar, SadaramComplex, Venkojipalem, Visakhapatnam, Andhra Pradesh 530022",4,350,YES,,"Idly, Poori, Avari Kudum, Ghee Masala Dosa, Pesarattu Upma, Sambar Idli"
+Kvr,"Main Road, Car Shed junction, NH16, Madhurawada, Visakhapatnam, Andhra Pradesh 530041",4,200,YES,8919389465,Chicken fry
+Novotel Visakhapatnam,"Dr NTR Beach Rd, Krishna Nagar, Maharani Peta, Visakhapatnam, Andhra Pradesh 530002",4,"1,100.00",YES,8912822222,"Barbequed Chicken,Lobster,Prawn,Chennai Shrimp"
+Somaa Restobar,"4TH FLOOR, VIP CENTER, VIP Rd, Siripuram, Visakhapatnam, Andhra Pradesh 530003",4,800,YES,9211112666,"Special Chicken Boneless Biryani, Chicken Mughlai Zafrani Biryani"
+Athidhi Devo Bhava,"Vijayanagar Colony, Lawsons Bay Colony, Pedda Waltair, Visakhapatnam, Andhra Pradesh 530017",4,800,YES,8106896789,"Veg Meals,Veg Pulao"
+Manjeera ,"Leela Plaza, Daba Garden Rd, Daba Gardens, Allipuram, Visakhapatnam, Andhra Pradesh 530020",4,710,NO,7947414395,Grilled Chicken
+Zeeshan,"PNB COMPLEX, Service Road, Car Shed, Junction, NH16, Madhurawada, Visakhapatnam, Andhra Pradesh 530041",4,700,YES,9441880943,Biryani
+Red Velvet,"171, 1-118-17, MIG, 12, Adarsh Nagar Rd, Near Ushodaya Junction, Sector 12, MVP Colony, Visakhapatnam, Andhra Pradesh 530017",4,400,YES,9809611234,"Sandwich, Burger, Pizza, Fast Food, Chinese, Shake, Beverages, Desserts"
+Sindhuri Multi Cuisine Restaurant," 28, MVP Main Rd, MVP Sector 3, Sector 3, MVP Colony, Visakhapatnam, Andhra Pradesh 530017",4,300,YES,9100910055,Paneer Biryani
+Hunger Wheelz,"Beside Children's Park 50-117-17, 10/4, 60 Feet Road, North Extension, Seethammadara, Visakhapatnam, Andhra Pradesh 530013",4,250,YES,9966969666,Veg & Non Veg Tiffins
+Swap,"Mvp sector 8 vuda complex shop no.9, opposite TTD kalyanamandapam, Visakhapatnam, Andhra Pradesh 530017",4,250,YES,9391041387,Oat meal
+Coffee and Kitchen,"Door 50-121-63/A, Seethammadhara, Opposite Bank Of India, Balayya Sastri Layout, Vizag",4,200,YES,9652888522,Peri Peri Fries
+Hunger Wheelz,"Beside Children's Park 50-117-17, 10/4, 60 Feet Road, North Extension, Seethammadara, Visakhapatnam, Andhra Pradesh 530013",4,150,YES,9966969666,Masala Dosa
+Cascades Restaurant,"NO, 75 Feet Rd, Dolphin Area, Daba Gardens, Allipuram, Visakhapatnam, Andhra Pradesh 530020",4,"1,000.00",YES,9347693112,Keema Dosa
+Dolphin Hotel,"75 Feet Road, Dolphin Hotel Jct, Daba Gardens, Visakhapatnam, Andhra Pradesh 530020",4,900,YES,8916622444,Grilled Chicken Sandwich
+Mr.Kitchen," Door No. 55, 15-10, HB Colony Rd, Bhanu Nagar, Seethammadara, Visakhapatnam, Andhra Pradesh 530022",4,500,YES,8341151500,"Chicken Dum Biryani,Non Veg Starters"
+Millet Rasoi," 55-1-19/1, behind Vrindavan Ayurvedic Village, opp. goshala, JR Nagar, Venkojipalem, Visakhapatnam, Andhra Pradesh 530022",4,200,YES,9441388855,Millets
+LA DELIZIA,": D. No- 49-54-9/3/2/1, Balayya Sastry Layout, Port Stadium Area, East Gate, Seethammadara, Visakhapatnam, Andhra Pradesh 530013",4,200,YES,8886558855,Blueberry
+Swagrama Foods," NH16, A.P.G.O Colony, Sector 2, MVP Colony, Visakhapatnam, Andhra Pradesh 530017",4,200,YES,9346120266,Special Kalakand
+Barbeque Nations,"4rd Floor, D. no 10-50-12, Sripuram, 9-Block, Waltair Main Rd, opposite Governor Bungalow, beside Reliance Trends, Andhra Pradesh 530003",5,"1,100.00",YES,7416106000,Cajun Potatoes
+SFC,"Y.S.R Cricket Stadium, Pothinamallayya Palem, Visakhapatnam, Andhra Pradesh 530048",5,500,YES,8919389465,Ckicken biryani
+AB's - Absolute Barbecues,"FOURTH FLOOR, Plot No. 244A UMA VINAYAGAR, Dwaraka Nagar, Visakhapatnam, Andhra Pradesh 530016",5,"1,100.00",YES,7337383763,Hawkers Grilled Fish
+Horizon Restaurant,"7th floor, Dolphin hotel, 75 Feet Road, Daba Garden Rd, Dolphin Area, Visakhapatnam, Andhra Pradesh 530020",5,"1,000.00",NO,8916622444,
+Upland Bristo,"10-26-1/1, opposite to Waltair Club, Waltair Uplands, Ravindra Nagar, Visakhapatnam, Andhra Pradesh 530003",5,"1,000.00",YES,8088261886,"Cheese Nachos, Veg Quesadilla, Herbed Chicken Broth Soup"
+Fusion Foods," beside Gurajada Kalakshetram, Siripuram, Visakhapatnam, Andhra Pradesh 530003",5,800,YES,8912533333,"Mughlai Chicken Biryani, Mutton Fry Biryani"
+The Gateway Hotel,"Dr NTR Beach Rd, Pandurangapuram, Visakhapatnam, Andhra Pradesh 530002",5,"1,100.00",YES,8916623670,"Spl. Mughlai Chicken Biryani,Prawns Biryani"
+Hotel Green Park ,"Nehru Nagar, Ram Nagar, Visakhapatnam, Andhra Pradesh 530020",5,"1,000.00",YES,8916615151,Tandoori Non Veg Platter
+Dine Destiny," Hotel Ocean Vista Bay,Cricket Academy, Dr NTR Beach Rd, East Point Colony, Visakhapatnam, Andhra Pradesh 530017",5,600,YES,9522828289,"Classic Margherita Pizza, Chicken Peri Peri Dine Destiny Pizza"
+5 SPICES,"Mvp sector 8 vuda complex shop no.9,  Visakhapatnam, Andhra Pradesh 530017",5,300,YES,7989552848,Butter Masala Dosa
+V Delights,"Besides Krishna College, opp. Union Bank of India, H B Colony, Visakhapatnam, Andhra Pradesh 530022",5,600,YES,,"Ragi Sangati,Chicken Mughalai Biryani,Hariyali Fish Biryani"

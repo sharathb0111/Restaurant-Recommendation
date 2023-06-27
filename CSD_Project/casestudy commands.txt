@@ -1,0 +1,17 @@
+git clone https://github.com/eswarupkumar/Realtime-Restaurant-Recommendation.git
+
+
+cd D:\VSC\Realtime-Restaurant-Recommendation\RRR
+
+
+PS D:\VSC\Realtime-Restaurant-Recommendation\RRR> python manage.py runserver
+
+
+PS D:\VSC\Realtime-Restaurant-Recommendation\RRR> python manage.py migrate
+
+
+PS D:\VSC\Realtime-Restaurant-Recommendation\RRR> python manage.py runserver
+
+
+
+python.exe -m pip install --upgrade pip

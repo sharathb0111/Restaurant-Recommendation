@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Table Filter Example</title>
+	<style>
+		table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+		}
+	</style>
+	<script>
+		function filterTable() {
+			// Get input values
+			var minRating = parseInt(document.getElementById("rating-min").value);
+			var maxPrice = parseInt(document.getElementById("price-max").value);
+			var searchProduct = document.getElementById("search-product").value.toUpperCase();
+			var searchDesc = document.getElementById("search-desc").value.toUpperCase();
+
+			// Get table rows
+			var tableRows = document.getElementById("myTable").rows;
+
+			// Loop through table rows and hide/show based on input values
+			for (var i = 1; i < tableRows.length; i++) {
+				var row = tableRows[i];
+				var rating = parseInt(row.cells[2].textContent);
+				var price = parseInt(row.cells[3].textContent);
+				var productName = row.cells[0].textContent.toUpperCase();
+				var desc = row.cells[1].textContent.toUpperCase();
+
+				if (rating >= minRating && price <= maxPrice && productName.indexOf(searchProduct) > -1 && desc.indexOf(searchDesc) > -1) {
+					row.style.display = "";
+				} else {
+					row.style.display = "none";
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+	<h2>Table Filter Example</h2>
+	<label for="rating-min">Minimum Rating:</label>
+	<input type="number" id="rating-min" min="1" max="5" value="1">
+	<label for="price-max">Maximum Price:</label>
+	<input type="number" id="price-max" min="210" max="1100" value="1100">
+	<label for="search-product">Search Product:</label>
+	<input type="text" id="search-product" onkeyup="filterTable()">
+	<label for="search-desc">Search Description:</label>
+	<input type="text" id="search-desc" onkeyup="filterTable()">
+	<button onclick="filterTable()">Filter</button>
+	<table id="myTable">
+		<tr>
+			<th>Product Name</th>
+			<th>Description</th>
+			<th>Rating</th>
+			<th>Price</th>
+		</tr>
+		<tr>
+			<td>Product 1</td>
+			<td>Description 1</td>
+			<td>4</td>
+			<td>500</td>
+		</tr>
+		<tr>
+			<td>Product 2</td>
+			<td>Description 2</td>
+			<td>3</td>
+			<td>750</td>
+		</tr>
+		<tr>
+			<td>Product 3</td>
+			<td>Description 3</td>
+			<td>5</td>
+			<td>900</td>
+		</tr>
+		<tr>
+			<td>Product 4</td>
+			<td>Description 4</td>
+			<td>2</td>
+			<td>350</td>
+		</tr>
+		<tr>
+			<td>Product 5</td>
+			<td>Description 5</td>
+			<td>4</td>
+			<td>1100</td>
+		</tr>
+	</table>
+</body>
+</html>
